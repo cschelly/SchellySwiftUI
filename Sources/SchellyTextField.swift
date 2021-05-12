@@ -29,7 +29,7 @@ public struct SchellyTextField: View {
         HStack {
             if let imageName = imageName {
                 Image(systemName: imageName)
-                  .foregroundColor(.tealBlue)
+                  .foregroundColor(color)
             }
             if isSecure {
                 SecureField(placeholder ?? "", text: $value)
