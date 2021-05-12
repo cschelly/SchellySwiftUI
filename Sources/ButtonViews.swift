@@ -23,11 +23,17 @@ public struct SchellyButton: View {
 
 public struct SchellyTextButton: View {
     var title: String
+    var backgroundColor: Color
+    var foregroundColor: Color
     var action: () -> Void
     
     public init(title: String,
+                backgroundColor: Color = .tealBlue,
+                foregroundColor: Color = .tealBlue,
                 _ action: @escaping () -> Void) {
         self.title = title
+        self.backgroundColor = backgroundColor
+        self.foregroundColor = foregroundColor
         self.action = action
     }
     
@@ -35,8 +41,8 @@ public struct SchellyTextButton: View {
         Text(title)
            .frame(width: 200.0)
            .padding()
-           .background(Color.tealBlue)
-           .foregroundColor(.white)
+           .background(backgroundColor)
+           .foregroundColor(foregroundColor)
            .cornerRadius(10)
            .shadow(radius: 8)
     }
