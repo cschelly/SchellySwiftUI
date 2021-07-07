@@ -12,5 +12,6 @@ public extension Color {
     static let lightGreen = Color(red: 0.454, green: 0.746, blue: 0.663)
     static let lightBlue = Color(red: 0.390, green: 0.758, blue: 0.933)
     static let lightRed = Color(red: 0.860, green: 0.293, blue: 0.345)
+    static let lightPurple = Color(red: 0.764, green: 0.615, blue: 0.796)
 }
 
